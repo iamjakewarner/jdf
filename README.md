@@ -18,5 +18,5 @@ Copyright 2019 by Jake Warner.
 
 You have my permission to use JDF in whatever projects you wish,
 whether commercial, personal, or otherwise, in whatever way you like.
-Official license information can be found in [LICENSE](LICENSE.md)
+Official license information can be found in [LICENSE](LICENSE)
 (spoiler: it's the MIT License).
