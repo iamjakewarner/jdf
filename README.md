@@ -6,11 +6,14 @@ as long as you’re running an up-to-date LaTeX distribution.
 ## Quick start
 
 You can clone this repo and try typesetting `jdf-starter.tex`
-with the following command:
+with the following commands:
 
+    biber jdf-starter
     pdflatex jdf-starter
 
 The result should look like `jdf-starter.pdf`.
+* `biber` command generates used referenes from `references.bib` 
+* `pdflatex` command generates the final pdf 
 
 ## License
 
