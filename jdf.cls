@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{jdf}[2019/08/10 v2.1.0 Joyner Document Format]
+\ProvidesClass{jdf}[2020/02/05 v2.2.0 Joyner Document Format]
 
 \newcommand{\papersize}{letterpaper} % Default value
 \DeclareOption{a4paper}{\renewcommand{\papersize}{a4paper}}
@@ -15,6 +15,7 @@
 %%
 % Page layout
 \ifstrequal{\papersize}{a4paper}{ % A4 paper page geometry settings
+% The text block is approximately 141.3x228.3mm, which is a ratio of 1:phi (and the ratio of the top margin to the bottom margin is also 1:phi)
 	\RequirePackage[
 		a4paper,
 		top=26.25mm,
@@ -25,6 +26,7 @@
 		%showframe, % Uncomment to show how the type block is set on the page
 	]{geometry}
 }{ % Default (letterpaper) page geometry settings
+% The text block is 5.5x8.5in, which is exactly 1/2 the page size, divided lengthwise
 	\RequirePackage[
 		\papersize,
 		top=1in,
@@ -36,8 +38,6 @@
 	]{geometry}
 }
 
-\RequirePackage{graphicx} % Required for including images
-\graphicspath{{Figures/}{./}} % Specifies where to look for included images
 \RequirePackage{hyperref} % Required for including links
 \RequirePackage{changepage}
 
@@ -55,6 +55,7 @@
 \newcommand\liningnums[1]{\fontfamily{ppl}\selectfont#1} % Enable switch to lining nums
 \RequirePackage{amsmath, amssymb}
 \RequirePackage{eulervm}
+\RequirePackage[scaled=.8819]{sourcecodepro} % Source Code Pro typeface for monospace
 \RequirePackage{csquotes}
 %\defaultfontfeatures{Ligatures=TeX} % To support LaTeX ligatures (`` and --)
 
@@ -155,6 +156,9 @@
 \newcommand{\subsubsubsection}[1]{
 	\textbf{\textit{#1}}\hairsp—\hairsp\ignorespaces
 }
+\renewcommand{\paragraph}[1]{
+	\textbf{\textit{#1}}\hairsp—\hairsp\ignorespaces
+}
 
 
 %%
@@ -182,7 +186,28 @@
 
 
 %%
+% Image stuff
+\RequirePackage{graphicx} % Required for including images
+\graphicspath{{Figures/}{./}} % Specifies where to look for included images
+
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+
+
+%%
 % Tables
+
+% Set default table placement to htbp
+\def\fps@table{htbp}
+\def\fps@longtable{htbp}
+
 \RequirePackage{booktabs} % Required for better horizontal rules in tables
 \RequirePackage{array} % Required for manipulating table columns
 \newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}} % Define a new right-aligned column type
@@ -198,13 +223,11 @@
 \setlength{\footnotesep}{8.5pt}
 
 \RequirePackage{footnotebackref} % Add backreferencing
-\makeatletter
 \long\def\@makefntext#1{
 	\lsstylehelp{10}{
 		{\footnotesize\@thefnmark~#1} % Footnote text position and width
 	}
 }
-\makeatother
 
 
 %%
@@ -239,8 +262,8 @@
 \DeclareNameAlias{sortname}{family-given}
 
 % Inline citations
-\renewcommand{\cite}[1]{ \citeauthor{#1}, \citeyear{#1}}
-\renewcommand{\citep}[1]{ (\citeauthor{#1}, \citeyear{#1})}
+\renewcommand{\cite}[1]{\citeauthor{#1}, \citeyear{#1}}
+\renewcommand{\citep}[1]{(\citeauthor{#1}, \citeyear{#1})}
 
 
 %%
