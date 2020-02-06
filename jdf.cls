@@ -71,7 +71,7 @@
 	shrink=10
 ]{microtype}
 
-\SetTracking{encoding=*}{5}
+\SetTracking{encoding=*}{10}
 \lsstyle
 
 \newcommand\lsstylehelp[1]{\edef\MT@letterspace@{#1}\lsstyle} % Enable change to letterspacing
@@ -135,7 +135,7 @@
 
 % Heading 1
 \titleformat{\section} % Section type being modified
-	{\normalfont\liningnums\lsstylehelp{50}\bfseries}
+	{\normalfont\liningnums\lsstylehelp{60}\bfseries}
 	{\thesection}{0.333em} % Space between the title and label
 	{\MakeUppercase}
 \titlespacing*{\section}{0pt}{2.5pt}{0pt}
@@ -165,7 +165,7 @@
 % Captions
 \RequirePackage{caption} % Required for customising captions
 \DeclareCaptionFormat{letterspaced}{%
-	\lsstylehelp{10}{%
+	\lsstylehelp{20}{%
 			#1#2#3\par%
 	}{}%
 }
@@ -224,7 +224,7 @@
 
 \RequirePackage{footnotebackref} % Add backreferencing
 \long\def\@makefntext#1{
-	\lsstylehelp{10}{
+	\lsstylehelp{20}{
 		{\footnotesize\@thefnmark~#1} % Footnote text position and width
 	}
 }
