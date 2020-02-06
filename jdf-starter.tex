@@ -7,7 +7,7 @@
 
 \author{Author Name}
 \email{username@gatech.edu}
-\title{Joyner Document Format 2.0:\\For Use in CS6460, CS6750, and CS7637}
+\title{Joyner Document Format v2.2:\\For Use in CS6460, CS6750, and CS7637}
 
 \begin{document}
 %\lsstyle
@@ -15,12 +15,10 @@
 \maketitle
 
 \begin{abstract}
-	If your paper requires an abstract, it should be placed at the top of the first page underneath the title block, preceded by the word \emph{Abstract} in bold italic. An extra 0.5" should be added to both sides. Not all papers require abstracts; only those that would benefit from a high-level summary of the project or its background.
+	Welcome to Joyner Document Format (JDF) v2.2! JDF is primarily intended to standardize page lengths while ensuring readability. Note that you are required to use JDF for all written assignments, but we will not perform explicit formatting checks. So, while im-proper formatting may be subject to penalties, you should not worry too much about whether your submission conforms to every minute detail; the most important elements are margins, font, font sizes, and line spacing. Just make a copy of one of the provided templates and replace its contents with your own, using the built-in paragraph styles.\footnote{Here are instructions for \href{https://support.office.com/en-us/article/Video-Using-Styles-in-Word-9db4c0f4-2754-4294-9758-c14a0abd8cfa}{Microsoft Word}, \href{https://support.apple.com/guide/pages/intro-to-paragraph-styles-tanaa39b0aa3/mac}{Apple Pages}, and \href{https://www.bazroberts.com/2016/04/19/google-docs-paragraph-styles-headings/}{Google Docs}.} If you do so, you do not need to verify that the style was followed.
 \end{abstract}
 
-\section{Text}
-Welcome to Joyner Document Format (JDF) 2.1! JDF is primarily intended to standardize page lengths while ensuring readability. Note that although you are required to use JDF for all written assignments, we will not perform explicit formatting checks. You should not worry too much about whether your submission conforms to every minute detail; the most important elements are margins, font, font sizes, and approximate line spacing. Use the paragraph styles built into this document. If you do so, you do not need to verify that the style was followed.
-
+\section{Typography}
 All text in JDF should be set in the Palatino typeface. It is available practically everywhere as a system font: Microsoft ships a version called \emph{Palatino Linotype}, and Apple uses a version simply called \emph{Palatino}. Those without either can look for \emph{Book Antiqua} in their fonts list or download \href{https://www.ctan.org/tex-archive/fonts/tex-gyre/opentype}{\TeX\ Gyre Pagella} from CTAN. They all come in regular and bold weights with matching italics.
 
 \subsection{Body text}
@@ -33,11 +31,14 @@ The paper title should be set in the regular weight at 17 points with 22 points 
 
 The author’s name and email should come next unless you want to or were asked to submit anonymously, in which case this can be omitted. They should be set in the same size and weight as body text, centered. These styles can be applied using the \emph{Title} and \emph{Subtitle} paragraph styles.
 
+\subsection{Abstract}
+If your paper requires an abstract, it should be placed at the top of the first page underneath the title block, preceded by the word \emph{Abstract} in bold italic. An extra 0.5" should be added to both sides. Not all papers require abstracts; only those that would benefit from a high-level summary of the project or its background.
+
 \subsection{Headings}
-Headings should all be set in the same size as body text (11 points) in bold. With the exception of \emph{Heading 1}, they should all have 8.5 points of space added before and after. They should be hierarchically numbered: Microsoft Word will do this automatically when you use the appropriate paragraph styles, but Google Docs users will need to number their headings manually.
+Headings should all be set in the same size as body text (11 pt) in bold. With the exception of \emph{Heading 1}, they should all have 8.5 pt of space before and after. They should be hierarchically numbered: Word, Pages, and \LaTeX\ do this automatically when you use the appropriate paragraph styles, but Google Docs users will to number their headings manually. Headings should not span more than one line.
 
 \subsubsection{Heading 1}
-Heading 1 should be set in all caps. It should have 11 points of space added before and 8.5 points of space added after.
+Heading 1 should be set in all caps, with letterspacing expanded by 0.66 points (6\%). It should have 11 points of space added before and 8.5 points of space added after.
 
 \subsubsection{Headings 2\,–\,4}
 Besides \emph{Heading 1}, which is set in caps, headings should always use sentence case (i.e., first word capitalized) rather than title case; after all, they are not titles. \emph{Heading 2} should be set in bold roman (upright), and \emph{Heading 3} should be set in bold italics. The use of headings beyond \emph{Heading 3} is discouraged.
@@ -64,7 +65,9 @@ If your figure includes a white background (e.g. an interface design or graph), 
 	\label{fig:flowchart}
 \end{figure}
 
-Figure captions should be centered beneath the corresponding figure. The label for the figure, e.g. “Figure 1,” should be bolded, and the entire caption should be 8.5 points with 14 points of line spacing. If need be, you may have one figure caption corresponding to multiple consecutive figures and use either locational descriptors (e.g. “top left,” “middle”) or labels (e.g. “A”, “B”) to map parts of the caption to parts of the figure. Make sure that caption falls on the same page as the corresponding figure or table; you may rearrange text to make this work.
+Figure captions should be centered beneath the corresponding figure. The label (e.g. “Figure 1”) should be set in bold italics followed by an em dash, and the entire caption should be 8.5 pt with 14 pt of line spacing. The \emph{Figure Caption} style in Word will number your figures automatically. If need be, you may have one figure caption corresponding to consecutive figures and use either locational descriptors (e.g. “top left,” “middle”) or labels (e.g. “A”, “B”) to map parts of the caption to parts of the figure. Make sure captions fall on the same page as the corresponding figure or table; you may rearrange text to make this work.
+
+In Word, you may need to either change the image’s text wrap settings to “Top and Bottom” or change the line spacing of the image to 1.0.
 
 \subsection{Tables}
 You have freedom to format tables in the way that works best for your data. Generally, text should be left-aligned and numbers should be right-aligned or aligned at the decimal – you can do this using a custom tab stop. The default table style (shown below) reduces the text size to be equal to the caption text.
