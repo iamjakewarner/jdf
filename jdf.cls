@@ -112,6 +112,13 @@
 		{\normalfont \@email}
 		\vspace{-11pt}
 	\end{center}
+	
+	\makeatletter
+	\hypersetup{
+		pdftitle=\@title,
+		pdfauthor=\@author
+	}
+	\makeatother
 }
 
 
@@ -271,8 +278,6 @@
 \RequirePackage{xcolor} % Required for defining custom colours
 \definecolor{linkBlue}{cmyk}{100,50,0,0}
 \hypersetup{
-	pdftitle={@title},
-	pdfauthor={@author},
 	% bookmarks=true,
 	% bookmarksopen=true,
 	pdfpagemode=UseOutlines,
