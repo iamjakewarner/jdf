@@ -113,12 +113,10 @@
 		\vspace{-11pt}
 	\end{center}
 	
-	\makeatletter
 	\hypersetup{
 		pdftitle=\@title,
 		pdfauthor=\@author
 	}
-	\makeatother
 }
 
 
