@@ -1,6 +1,7 @@
 \documentclass{jdf}
 
 \usepackage{longtable}
+
 $if(highlighting-macros)$
 $highlighting-macros$
 $endif$
@@ -15,6 +16,8 @@ $endfor$
 
 \begin{document}
 
+\def\tightlist{}
+
 \maketitle
 
 $if(abstract)$
@@ -24,5 +27,29 @@ $if(abstract)$
 $endif$
 
 $body$
+
+
+$if(natbib)$
+$if(biblio-files)$
+$if(biblio-title)$
+$if(book-class)$
+\renewcommand\bibname{Bibliography}
+$else$
+\renewcommand\refname{References}
+$endif$
+$endif$
+
+\bibliography{$biblio-files$}
+
+$endif$
+$endif$
+$if(biblatex)$
+\printbibliography$if(biblio-title)$[title=References]$endif$
+
+$endif$
+$for(include-after)$
+$include-after$
+
+$endfor$
 
 \end{document}
