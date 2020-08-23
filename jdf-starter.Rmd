@@ -8,6 +8,9 @@ abstract: |
     Welcome to Joyner Document Format (JDF) v2.2! JDF is primarily intended to standardize page lengths while ensuring readability. Note that you are required to use JDF for all written assignments, but we will not perform explicit formatting checks. So, while improper formatting may be subject to penalties, you should not worry too much about whether your submission conforms to every minute detail; the most important elements are margins, font, font sizes, and line spacing. Just make a copy of one of the provided templates and replace its contents with your own, using the built-in paragraph styles.^[Here are instructions for [Microsoft Word](https://support.office.com/en-us/article/Video-Using-Styles-in-Word-9db4c0f4-2754-4294-9758-c14a0abd8cfa), [Apple Pages](https://support.apple.com/guide/pages/intro-to-paragraph-styles-tanaa39b0aa3/mac), and [Google Docs](https://www.bazroberts.com/2016/04/19/google-docs-paragraph-styles-headings/).] If you do so, you do not need to verify that the style was followed.
 bibliography: [references.bib]
 link-citations: yes
+documentclass: jdf
+# classoption: a4paper # Use A4 paper size
+classoption: letterpaper # Use US letter paper size
 output: 
     pdf_document:
         template: jdf-template.pandoc
