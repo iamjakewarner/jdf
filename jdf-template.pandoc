@@ -10,6 +10,11 @@ $for(bibliography)$
 \addbibresource{$bibliography$}
 $endfor$
 
+$if(csl-refs)$
+\newenvironment{cslreferences}%
+  {\printbibliography[heading=none]}
+$endif$
+
 \title{$title$}
 \author{$author$}
 \email{$email$}
@@ -28,25 +33,6 @@ $endif$
 
 $body$
 
-
-$if(natbib)$
-$if(biblio-files)$
-$if(biblio-title)$
-$if(book-class)$
-\renewcommand\bibname{Bibliography}
-$else$
-\renewcommand\refname{References}
-$endif$
-$endif$
-
-\bibliography{$biblio-files$}
-
-$endif$
-$endif$
-$if(biblatex)$
-\printbibliography$if(biblio-title)$[title=References]$endif$
-
-$endif$
 $for(include-after)$
 $include-after$
 
