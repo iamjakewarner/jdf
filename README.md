@@ -11,7 +11,7 @@ You can clone this repo and try typesetting `jdf-starter.tex`
 with the following commands:
 
 ```sh
-biber jdf-starter.tex
+biber jdf-starter
 pdflatex jdf-starter.tex
 ```
 
