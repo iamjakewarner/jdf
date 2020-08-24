@@ -6,14 +6,17 @@ author: 'Author Name'
 email: 'username\@gatech\.edu'
 abstract: |
     Welcome to Joyner Document Format (JDF) v2.2! JDF is primarily intended to standardize page lengths while ensuring readability. Note that you are required to use JDF for all written assignments, but we will not perform explicit formatting checks. So, while improper formatting may be subject to penalties, you should not worry too much about whether your submission conforms to every minute detail; the most important elements are margins, font, font sizes, and line spacing. Just make a copy of one of the provided templates and replace its contents with your own, using the built-in paragraph styles.^[Here are instructions for [Microsoft Word](https://support.office.com/en-us/article/Video-Using-Styles-in-Word-9db4c0f4-2754-4294-9758-c14a0abd8cfa), [Apple Pages](https://support.apple.com/guide/pages/intro-to-paragraph-styles-tanaa39b0aa3/mac), and [Google Docs](https://www.bazroberts.com/2016/04/19/google-docs-paragraph-styles-headings/).] If you do so, you do not need to verify that the style was followed.
-bibliography: references.bib
+bibliography: [references.bib]
 link-citations: yes
+documentclass: jdf
+# classoption: a4paper # Use A4 paper size
+classoption: letterpaper # Use US letter paper size
 output: 
     pdf_document:
         template: jdf-template.pandoc
         fig_caption: true
-        citation_package: biblatex
         keep_tex: true
+csl: apa-sort-by-first-author-family-name-with-citation-number.csl
 ---
 
 # Typography
@@ -117,14 +120,15 @@ Numbered list:
 
 ## In-line citations
 
-Articles or sources to which you refer should be cited in-line with the authors’ names and the year of publication.^[In-line citations are preferred over footnotes, and we favor APA citation format for both in-line citations and reference lists. Refer to the Purdue Online Writing Lab, or follow the above examples. Footnotes should use 8.5 point text with 14 point line spacing.] The citation should be placed close in the text to the actual claim, not merely at the end of the paragraph. For example: students in the OMSCS program are older and more likely to be employed than students in the on-campus program [@joyner2017]. In the event of multiple authors, list them. For example: research finds sentiment analysis of the text of OMSCS reviews corresponds to student-assigned ratings of the course [@newman2018]. You may also cite multiple studies together. For example: several studies have found students in the online version of an undergraduate CS1 class performed equally with students in a traditional version ([@joyner2018a; @joyner2018b]). If you would like to refer to an author in text, you may also do so by including the year (in parentheses) after the author’s name in the text. If a publication has more than 4 authors, you may list the first author followed by ‘et al.’ For example: [@joyner2016] claim that a round of peer review prior to grading may improve graders’ efficiency and the quality of feedback given. This applies to parenthetical citations as well, e.g. [@joyner2016].
+Articles or sources to which you refer should be cited in-line with the authors’ names and the year of publication.^[In-line citations are preferred over footnotes, and we favor APA citation format for both in-line citations and reference lists. Refer to the Purdue Online Writing Lab, or follow the above examples. Footnotes should use 8.5 point text with 14 point line spacing.] The citation should be placed close in the text to the actual claim, not merely at the end of the paragraph. For example: students in the OMSCS program are older and more likely to be employed than students in the on-campus program [@joyner2017]. In the event of multiple authors, list them. For example: research finds sentiment analysis of the text of OMSCS reviews corresponds to student-assigned ratings of the course [@newman2018]. You may also cite multiple studies together. For example: several studies have found students in the online version of an undergraduate CS1 class performed equally with students in a traditional version [@newman2018; @joyner2018a; @joyner2018b]. If you would like to refer to an author in text, you may also do so by including the year (in parentheses) after the author’s name in the text. If a publication has more than 4 authors, you may list the first author followed by ‘et al.’ For example: @joyner2016 claim that a round of peer review prior to grading may improve graders’ efficiency and the quality of feedback given. This applies to parenthetical citations as well, e.g. [@joyner2016].
 
-## Reference lists 
+## Reference lists
 
-References should be placed at the end of the paper in a dedicated section. Reference lists should be numbered and organized alphabetically by first author’s last name. If multiple papers have the same author(s) and year, you may append a letter to the end of the year to allow differentiated in-line text (e.g. Joyner, 2018a and Joyner, 2018b in the section above). If multiple papers have the same author(s), list them in chronological order starting with the older paper. Only works that are cited in-line should be included in the reference list. The reference list does not count against the length requirements.
+References should be placed at the end of the paper in a dedicated section. Reference lists should be numbered and organized alphabetically by first author’s last name. If multiple papers have the same author(s) and year, you may append a letter to the end of the year to allow differentiated in-line text [e.g. @joyner2018a; and @joyner2018b in the section above]. If multiple papers have the same author(s), list them in chronological order starting with the older paper. Only works that are cited in-line should be included in the reference list. The reference list does not count against the length requirements.
 
 # References
 
+<div id="refs"></div>
 
 # Appendices
 

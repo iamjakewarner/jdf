@@ -1,4 +1,26 @@
-\documentclass{jdf}
+\documentclass[
+$if(fontsize)$
+  $fontsize$,
+$endif$
+$if(lang)$
+  $babel-lang$,
+$endif$
+$if(papersize)$
+  $papersize$paper,
+$endif$
+$if(beamer)$
+  ignorenonframetext,
+$if(handout)$
+  handout,
+$endif$
+$if(aspectratio)$
+  aspectratio=$aspectratio$,
+$endif$
+$endif$
+$for(classoption)$
+  $classoption$$sep$,
+$endfor$
+]{$documentclass$}
 
 \usepackage{longtable}
 
@@ -9,6 +31,15 @@ $endif$
 $for(bibliography)$
 \addbibresource{$bibliography$}
 $endfor$
+
+$if(csl-refs)$
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newenvironment{cslreferences}%
+  {$if(csl-hanging-indent)$\setlength{\parindent}{0pt}%
+  \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces$endif$}%
+  {\par}
+$endif$
 
 \title{$title$}
 \author{$author$}
@@ -28,25 +59,6 @@ $endif$
 
 $body$
 
-
-$if(natbib)$
-$if(biblio-files)$
-$if(biblio-title)$
-$if(book-class)$
-\renewcommand\bibname{Bibliography}
-$else$
-\renewcommand\refname{References}
-$endif$
-$endif$
-
-\bibliography{$biblio-files$}
-
-$endif$
-$endif$
-$if(biblatex)$
-\printbibliography$if(biblio-title)$[title=References]$endif$
-
-$endif$
 $for(include-after)$
 $include-after$
 
