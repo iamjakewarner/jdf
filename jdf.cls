@@ -267,8 +267,8 @@
 \DeclareNameAlias{sortname}{family-given}
 
 % Inline citations
-\renewcommand{\cite}[1]{\citeauthor{#1}, \citeyear{#1}}
-\renewcommand{\citep}[1]{(\citeauthor{#1}, \citeyear{#1})}
+\renewcommand{\cite}[2]{\citeauthor{#1}\citeyear{#2}}
+\renewcommand{\citep}[2]{(\citeauthor{#1}\citeyear{#2})}
 
 
 %%
