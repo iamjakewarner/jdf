@@ -1,0 +1,212 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{barry_gdpr_2019}{online}{}
+      \name{author}{1}{}{%
+        {{hash=060a705ee10a40225d6fdaf129cdb124}{%
+           family={Barry},
+           familyi={B\bibinitperiod},
+           given={Stephanie},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{060a705ee10a40225d6fdaf129cdb124}
+      \strng{fullhash}{060a705ee10a40225d6fdaf129cdb124}
+      \strng{bibnamehash}{060a705ee10a40225d6fdaf129cdb124}
+      \strng{authorbibnamehash}{060a705ee10a40225d6fdaf129cdb124}
+      \strng{authornamehash}{060a705ee10a40225d6fdaf129cdb124}
+      \strng{authorfullhash}{060a705ee10a40225d6fdaf129cdb124}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{28}
+      \field{month}{7}
+      \field{title}{{GDPR} and Advertising – the Impact So Far - {AdWorld}.ie}
+      \field{titleaddon}{adworld.ie}
+      \field{type}{Industry News}
+      \field{urlday}{5}
+      \field{urlmonth}{2}
+      \field{urlyear}{2021}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.adworld.ie/2019/07/18/gdpr-and-advertising-the-impact-so-far/
+      \endverb
+      \verb{url}
+      \verb https://www.adworld.ie/2019/07/18/gdpr-and-advertising-the-impact-so-far/
+      \endverb
+    \endentry
+    \entry{davies_personalization_2018}{online}{}
+      \name{author}{1}{}{%
+        {{hash=8fb6c1afb8667740f5845a2ca8033da5}{%
+           family={Davies},
+           familyi={D\bibinitperiod},
+           given={Jessice},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{8fb6c1afb8667740f5845a2ca8033da5}
+      \strng{fullhash}{8fb6c1afb8667740f5845a2ca8033da5}
+      \strng{bibnamehash}{8fb6c1afb8667740f5845a2ca8033da5}
+      \strng{authorbibnamehash}{8fb6c1afb8667740f5845a2ca8033da5}
+      \strng{authornamehash}{8fb6c1afb8667740f5845a2ca8033da5}
+      \strng{authorfullhash}{8fb6c1afb8667740f5845a2ca8033da5}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{7}
+      \field{month}{6}
+      \field{title}{'Personalization diminished': In the {GDPR} era, contextual targeting is making a comeback - Digiday}
+      \field{titleaddon}{Digiday}
+      \field{type}{News}
+      \field{urlday}{5}
+      \field{urlmonth}{2}
+      \field{urlyear}{2021}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://digiday.com/media/personalization-diminished-gdpr-era-contextual-targeting-making-comeback/
+      \endverb
+      \verb{url}
+      \verb https://digiday.com/media/personalization-diminished-gdpr-era-contextual-targeting-making-comeback/
+      \endverb
+    \endentry
+    \entry{korf_artificial_1999}{article}{}
+      \name{author}{1}{}{%
+        {{hash=6f5c30fde5c68e6cbbe3102748088819}{%
+           family={Korf},
+           familyi={K\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{6f5c30fde5c68e6cbbe3102748088819}
+      \strng{fullhash}{6f5c30fde5c68e6cbbe3102748088819}
+      \strng{bibnamehash}{6f5c30fde5c68e6cbbe3102748088819}
+      \strng{authorbibnamehash}{6f5c30fde5c68e6cbbe3102748088819}
+      \strng{authornamehash}{6f5c30fde5c68e6cbbe3102748088819}
+      \strng{authorfullhash}{6f5c30fde5c68e6cbbe3102748088819}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Citeseer}
+      \field{title}{Artificial intelligence search algorithms}
+      \field{year}{1999}
+      \field{dateera}{ce}
+    \endentry
+    \entry{european_parliament_general_2016}{article}{}
+      \name{author}{2}{}{%
+        {{hash=c25d305ea83de23a244dd39c979ff060}{%
+           family={Parliament},
+           familyi={P\bibinitperiod},
+           given={European},
+           giveni={E\bibinitperiod}}}%
+        {{hash=fb64d18f85ab901cde4dc644934f41e0}{%
+           family={European\bibnamedelima union},
+           familyi={E\bibinitperiod\bibinitdelim u\bibinitperiod},
+           given={Council},
+           giveni={C\bibinitperiod},
+           prefix={of\bibnamedelima the},
+           prefixi={o\bibinitperiod\bibinitdelim t\bibinitperiod}}}%
+      }
+      \strng{namehash}{e2d028f8c3c6f00424c038af1df465c8}
+      \strng{fullhash}{e2d028f8c3c6f00424c038af1df465c8}
+      \strng{bibnamehash}{e2d028f8c3c6f00424c038af1df465c8}
+      \strng{authorbibnamehash}{e2d028f8c3c6f00424c038af1df465c8}
+      \strng{authornamehash}{e2d028f8c3c6f00424c038af1df465c8}
+      \strng{authorfullhash}{e2d028f8c3c6f00424c038af1df465c8}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{4}
+      \field{issn}{1977-0677}
+      \field{journaltitle}{Official Journal of the European Union}
+      \field{month}{5}
+      \field{number}{119}
+      \field{title}{General Data Protection Regulation ({GDPR})}
+      \field{urlday}{5}
+      \field{urlmonth}{2}
+      \field{urlyear}{2021}
+      \field{volume}{59}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{89\bibrangessep 132}
+      \range{pages}{2}
+      \verb{urlraw}
+      \verb https://gdpr-info.eu/
+      \endverb
+      \verb{url}
+      \verb https://gdpr-info.eu/
+      \endverb
+    \endentry
+    \entry{satariano_google_2019}{article}{}
+      \name{author}{1}{}{%
+        {{hash=229e6692ecc6fd5e59fbda5653075cf1}{%
+           family={Satariano},
+           familyi={S\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{229e6692ecc6fd5e59fbda5653075cf1}
+      \strng{fullhash}{229e6692ecc6fd5e59fbda5653075cf1}
+      \strng{bibnamehash}{229e6692ecc6fd5e59fbda5653075cf1}
+      \strng{authorbibnamehash}{229e6692ecc6fd5e59fbda5653075cf1}
+      \strng{authornamehash}{229e6692ecc6fd5e59fbda5653075cf1}
+      \strng{authorfullhash}{229e6692ecc6fd5e59fbda5653075cf1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{21}
+      \field{journaltitle}{New York Times}
+      \field{month}{1}
+      \field{title}{Google Is Fined \$57 Million Under Europe’s Data Privacy Law - The New York Times}
+      \field{urlday}{5}
+      \field{urlmonth}{2}
+      \field{urlyear}{2021}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.nytimes.com/2019/01/21/technology/google-europe-gdpr-fine.html
+      \endverb
+      \verb{url}
+      \verb https://www.nytimes.com/2019/01/21/technology/google-europe-gdpr-fine.html
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
