@@ -127,20 +127,20 @@
            familyi={P\bibinitperiod},
            given={European},
            giveni={E\bibinitperiod}}}%
-        {{hash=fb64d18f85ab901cde4dc644934f41e0}{%
-           family={European\bibnamedelima union},
-           familyi={E\bibinitperiod\bibinitdelim u\bibinitperiod},
+        {{hash=f4dfa52e1b1583cf31ef55fa2a92580f}{%
+           family={European\bibnamedelima Union},
+           familyi={E\bibinitperiod\bibinitdelim U\bibinitperiod},
            given={Council},
            giveni={C\bibinitperiod},
            prefix={of\bibnamedelima the},
            prefixi={o\bibinitperiod\bibinitdelim t\bibinitperiod}}}%
       }
-      \strng{namehash}{e2d028f8c3c6f00424c038af1df465c8}
-      \strng{fullhash}{e2d028f8c3c6f00424c038af1df465c8}
-      \strng{bibnamehash}{e2d028f8c3c6f00424c038af1df465c8}
-      \strng{authorbibnamehash}{e2d028f8c3c6f00424c038af1df465c8}
-      \strng{authornamehash}{e2d028f8c3c6f00424c038af1df465c8}
-      \strng{authorfullhash}{e2d028f8c3c6f00424c038af1df465c8}
+      \strng{namehash}{9a5709c126112ea159c254d994dd3fe1}
+      \strng{fullhash}{9a5709c126112ea159c254d994dd3fe1}
+      \strng{bibnamehash}{9a5709c126112ea159c254d994dd3fe1}
+      \strng{authorbibnamehash}{9a5709c126112ea159c254d994dd3fe1}
+      \strng{authornamehash}{9a5709c126112ea159c254d994dd3fe1}
+      \strng{authorfullhash}{9a5709c126112ea159c254d994dd3fe1}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
       \field{extradatescope}{labelyear}
@@ -151,7 +151,8 @@
       \field{issn}{1977-0677}
       \field{journaltitle}{Official Journal of the European Union}
       \field{month}{5}
-      \field{number}{119}
+      \field{series}{L 119}
+      \field{shortjournal}{{OJ}}
       \field{title}{General Data Protection Regulation ({GDPR})}
       \field{urlday}{5}
       \field{urlmonth}{2}

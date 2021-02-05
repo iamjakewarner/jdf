@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber hw1"] 1612535524 "hw1.bcf" "hw1.bbl" "hw1" 1612535545
-  "hw1.bcf" 1612535545 107712 95886c42e6b5577477c2d8f17c2fbfc1 "pdflatex"
-  "references.bib" 1612534276 3632 e4a5244133b04872e1f1d5a84f903ae8 ""
+["biber hw1"] 1612536241 "hw1.bcf" "hw1.bbl" "hw1" 1612536253
+  "hw1.bcf" 1612536253 107712 95886c42e6b5577477c2d8f17c2fbfc1 "pdflatex"
+  "references.bib" 1612536231 3684 45511701a805fb183a66b8a7bab2359c ""
   (generated)
   "hw1.bbl"
   "hw1.blg"
-["pdflatex"] 1612535540 "c:/Users/aleja/Projects/omscs/kbai/hw1/hw1.tex" "c:/Users/aleja/Projects/omscs/kbai/hw1/hw1.pdf" "hw1" 1612535545
+["pdflatex"] 1612536248 "c:/Users/aleja/Projects/omscs/kbai/hw1/hw1.tex" "c:/Users/aleja/Projects/omscs/kbai/hw1/hw1.pdf" "hw1" 1612536253
   "C:/Users/aleja/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1610748298 9293901 86886a41aa348834dbe0d7862f8ad919 ""
   "C:/Users/aleja/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1610748288 128529 61a18bb9d9c4af5cf3b90316abc10f66 ""
   "C:/Users/aleja/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -187,20 +187,20 @@
   "C:/Users/aleja/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/aleja/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1463135581 57049 34128738f682d033422ca125f82e5d62 ""
   "C:/Users/aleja/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1606298686 4902 efb3d66683a2da2a232f71e3a571a899 ""
-  "c:/Users/aleja/Projects/omscs/kbai/hw1/hw1.aux" 1612535545 3289 c7eb819c36462b5224e695d1512aedbf ""
-  "c:/Users/aleja/Projects/omscs/kbai/hw1/hw1.tex" 1612535512 6007 5c80706316c7f928853cc4878d74911f ""
-  "hw1.aux" 1612535545 3289 c7eb819c36462b5224e695d1512aedbf "pdflatex"
-  "hw1.bbl" 1612535530 8146 1f44a962acff0a3944b37fb90f63c075 "biber hw1"
-  "hw1.out" 1612535545 135 89c0189e2704f6ad94728de5835f1709 "pdflatex"
-  "hw1.run.xml" 1612535545 2335 a9e6043bd205c895961950064a459aac "pdflatex"
-  "hw1.tex" 1612535512 6007 5c80706316c7f928853cc4878d74911f ""
+  "c:/Users/aleja/Projects/omscs/kbai/hw1/hw1.aux" 1612536253 3289 84a938cedf7dde97e926f5c96fa7d423 ""
+  "c:/Users/aleja/Projects/omscs/kbai/hw1/hw1.tex" 1612535706 6000 ca059ed91d7c6bbc3592df5cad34aac6 ""
+  "hw1.aux" 1612536253 3289 84a938cedf7dde97e926f5c96fa7d423 "pdflatex"
+  "hw1.bbl" 1612536243 8182 a937adca8fcfbdc5ec1d3023e13ce20f "biber hw1"
+  "hw1.out" 1612536253 135 89c0189e2704f6ad94728de5835f1709 "pdflatex"
+  "hw1.run.xml" 1612536253 2335 a9e6043bd205c895961950064a459aac "pdflatex"
+  "hw1.tex" 1612535706 6000 ca059ed91d7c6bbc3592df5cad34aac6 ""
   "jdf.cls" 1610581318 7750 7b861e6b6d340d4f0f50053f2a566f0f ""
   (generated)
-  "c:/Users/aleja/Projects/omscs/kbai/hw1/hw1.pdf"
+  "hw1.log"
+  "c:/Users/aleja/Projects/omscs/kbai/hw1/hw1.log"
+  "hw1.bcf"
   "hw1.out"
+  "c:/Users/aleja/Projects/omscs/kbai/hw1/hw1.pdf"
+  "hw1.run.xml"
   "hw1.aux"
   "hw1.pdf"
-  "hw1.bcf"
-  "c:/Users/aleja/Projects/omscs/kbai/hw1/hw1.log"
-  "hw1.run.xml"
-  "hw1.log"

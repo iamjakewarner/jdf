@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2021.1.16)  5 FEB 2021 23:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2021.1.16)  5 FEB 2021 23:44
 entering extended mode
 **c:/Users/aleja/Projects/omscs/kbai/hw1/hw1.tex
 (c:/Users/aleja/Projects/omscs/kbai/hw1/hw1.tex
@@ -994,17 +994,17 @@ Package logreq Info: Writing requests to 'hw1.run.xml'.
 ### simple group (level 1) entered at line 15 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 20980 strings out of 479618
- 365389 string characters out of 2865026
+ 20967 strings out of 479618
+ 365279 string characters out of 2865026
  1134568 words of memory out of 3000000
- 37563 multiletter control sequences out of 15000+200000
- 472997 words of font info for 243 fonts, out of 3000000 for 9000
+ 37564 multiletter control sequences out of 15000+200000
+ 472020 words of font info for 230 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  86i,5n,131p,875b,1807s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/aleja/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/sourcecodepro/a_lutrty.enc}{C:/Users/aleja/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/aleja/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/sourcecodepro/SourceCodePro-Regular.pfb><C:/Users/aleja/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Users/aleja/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eurm10.pfb><C:/Users/aleja/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eurm7.pfb><C:/Users/aleja/AppData/Local/Programs/MiKTeX/fonts/type1/public/fpl/fplrc8a.pfb><C:/Users/aleja/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/aleja/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/aleja/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on c:/Users\aleja\Projects\omscs\kbai\hw1\hw1.pdf (3 pages, 140500 bytes).
+Output written on c:/Users\aleja\Projects\omscs\kbai\hw1\hw1.pdf (3 pages, 140702 bytes).
 PDF statistics:
- 81 PDF objects out of 1000 (max. 8388607)
+ 82 PDF objects out of 1000 (max. 8388607)
  12 named destinations out of 1000 (max. 500000)
  68121 words of extra memory for PDF output out of 74296 (max. 10000000)
 
