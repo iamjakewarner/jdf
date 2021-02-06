@@ -57,6 +57,38 @@
       \verb https://www.adworld.ie/2019/07/18/gdpr-and-advertising-the-impact-so-far/
       \endverb
     \endentry
+    \entry{pngegg_contributor_star_nodate}{artwork}{}
+      \name{author}{1}{}{%
+        {{hash=8252ef13c82c1b751a14d1c57e6fd9eb}{%
+           family={contributor},
+           familyi={c\bibinitperiod},
+           given={PNGEGG},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{8252ef13c82c1b751a14d1c57e6fd9eb}
+      \strng{fullhash}{8252ef13c82c1b751a14d1c57e6fd9eb}
+      \strng{bibnamehash}{8252ef13c82c1b751a14d1c57e6fd9eb}
+      \strng{authorbibnamehash}{8252ef13c82c1b751a14d1c57e6fd9eb}
+      \strng{authornamehash}{8252ef13c82c1b751a14d1c57e6fd9eb}
+      \strng{authorfullhash}{8252ef13c82c1b751a14d1c57e6fd9eb}
+      \field{sortinit}{c}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Star Wars Episode {VII} Rey Daisy Ridley Kylo Ren Hollywood, jedi, star Wars Episode {VII}, arm png}
+      \field{urlday}{5}
+      \field{urlmonth}{2}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.pngegg.com/en/png-xiive
+      \endverb
+      \verb{url}
+      \verb https://www.pngegg.com/en/png-xiive
+      \endverb
+    \endentry
     \entry{davies_personalization_2018}{online}{}
       \name{author}{1}{}{%
         {{hash=8fb6c1afb8667740f5845a2ca8033da5}{%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2021.1.16)  5 FEB 2021 23:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2021.1.16)  6 FEB 2021 14:19
 entering extended mode
 **c:/Users/aleja/Projects/omscs/kbai/hw1/hw1.tex
 (c:/Users/aleja/Projects/omscs/kbai/hw1/hw1.tex
@@ -955,34 +955,54 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 ) (C:\Users\aleja\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for TS1+pplj on input line 25.
+<Figures/HW1 diagram - Page 2 (4).png, id=15, 3537.215pt x 905.3825pt>
+File: Figures/HW1 diagram - Page 2 (4).png Graphic file (type png)
+<use Figures/HW1 diagram - Page 2 (4).png>
+Package pdftex.def Info: Figures/HW1 diagram - Page 2 (4).png  used on input line 22.
+(pdftex.def)             Requested size: 397.46075pt x 101.7337pt.
+LaTeX Font Info:    Trying to load font information for TS1+pplj on input line 30.
  (C:\Users\aleja\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1pplj.fd
 File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
 )
 
 Package microtype Warning: I cannot find a spacing list for font
 (microtype)                `TS1/pplj/m/n/5/100ls'. Switching off
-(microtype)                spacing for this font on input line 25.
+(microtype)                spacing for this font on input line 30.
+
+<Figures/HW1 diagram - Page 1.png, id=17, 5507.57625pt x 2926.935pt>
+File: Figures/HW1 diagram - Page 1.png Graphic file (type png)
+<use Figures/HW1 diagram - Page 1.png>
+Package pdftex.def Info: Figures/HW1 diagram - Page 1.png  used on input line 39.
+(pdftex.def)             Requested size: 614.23915pt x 326.42998pt.
+
+Overfull \hbox (216.75415pt too wide) in paragraph at lines 39--41
+ [][] 
+ []
 
 [1
 
-{C:/Users/aleja/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2]
-LaTeX Font Info:    Trying to load font information for T1+SourceCodePro-TLF on input line 47.
+{C:/Users/aleja/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <c:/Users/aleja/Projects/omscs/kbai/hw1/Figures/HW1 diagram - Page 2 (4).png>] [2 <c:/Users/aleja/Projects/omscs/kbai/hw1/Figures/HW1 diagram - Page 1.png>] [3]
+LaTeX Font Info:    Trying to load font information for T1+SourceCodePro-TLF on input line 58.
  (C:\Users\aleja\AppData\Local\Programs\MiKTeX\tex/latex/sourcecodepro\t1sourcecodepro-tlf.fd
 File: T1SourceCodePro-TLF.fd 2018/02/18 (autoinst) Font definitions for T1/SourceCodePro-TLF.
 )
 LaTeX Font Info:    Font shape `T1/SourceCodePro-TLF/m/n' will be
-(Font)              scaled to size 9.70087pt on input line 47.
+(Font)              scaled to size 9.70087pt on input line 58.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `SourceCodePro-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (9.52159pt too wide) in paragraph at lines 47--47
+
+Package biblatex Warning: No driver for entry type 'artwork'.
+(biblatex)                Using fallback driver on input line 58.
+
+
+Overfull \hbox (9.52159pt too wide) in paragraph at lines 58--58
 \T1/SourceCodePro-TLF/m/n/11/10ls digiday . com / media / personalization -[] diminished -[] gdpr -[] era -[] contextual -[]
  []
 
-[3] (c:/Users\aleja\Projects\omscs\kbai\hw1\hw1.aux)
+[4] [5] (c:/Users\aleja\Projects\omscs\kbai\hw1\hw1.aux)
 Package rerunfilecheck Info: File `hw1.out' has not changed.
 (rerunfilecheck)             Checksum: 89C0189E2704F6AD94728DE5835F1709;135.
 Package logreq Info: Writing requests to 'hw1.run.xml'.
@@ -994,17 +1014,17 @@ Package logreq Info: Writing requests to 'hw1.run.xml'.
 ### simple group (level 1) entered at line 15 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 20967 strings out of 479618
- 365279 string characters out of 2865026
- 1134568 words of memory out of 3000000
- 37564 multiletter control sequences out of 15000+200000
- 472020 words of font info for 230 fonts, out of 3000000 for 9000
+ 21162 strings out of 479618
+ 368438 string characters out of 2865026
+ 1135952 words of memory out of 3000000
+ 37631 multiletter control sequences out of 15000+200000
+ 501959 words of font info for 308 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 86i,5n,131p,875b,1807s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/aleja/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/sourcecodepro/a_lutrty.enc}{C:/Users/aleja/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/aleja/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/sourcecodepro/SourceCodePro-Regular.pfb><C:/Users/aleja/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Users/aleja/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eurm10.pfb><C:/Users/aleja/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eurm7.pfb><C:/Users/aleja/AppData/Local/Programs/MiKTeX/fonts/type1/public/fpl/fplrc8a.pfb><C:/Users/aleja/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/aleja/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/aleja/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on c:/Users\aleja\Projects\omscs\kbai\hw1\hw1.pdf (3 pages, 140702 bytes).
+ 86i,6n,131p,875b,1815s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/aleja/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/sourcecodepro/a_lutrty.enc}{C:/Users/aleja/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/aleja/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/sourcecodepro/SourceCodePro-Regular.pfb><C:/Users/aleja/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Users/aleja/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eurm10.pfb><C:/Users/aleja/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eurm7.pfb><C:/Users/aleja/AppData/Local/Programs/MiKTeX/fonts/type1/public/fpl/fplbij8a.pfb><C:/Users/aleja/AppData/Local/Programs/MiKTeX/fonts/type1/public/fpl/fplrc8a.pfb><C:/Users/aleja/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/aleja/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Users/aleja/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/aleja/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on c:/Users\aleja\Projects\omscs\kbai\hw1\hw1.pdf (5 pages, 1753732 bytes).
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
- 12 named destinations out of 1000 (max. 500000)
- 68121 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 109 PDF objects out of 1000 (max. 8388607)
+ 17 named destinations out of 1000 (max. 500000)
+ 117283 words of extra memory for PDF output out of 128383 (max. 10000000)
 

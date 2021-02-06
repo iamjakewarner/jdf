@@ -15,20 +15,31 @@
 \maketitle
 
 \section{Question 1}
-It is possible to represent the Star Wars problem as a semantic net. Each node of the net represents a state in the problem space. For the Star Wars problem, each node, at a minimum, should provide a way to store who is planet-side and where the ship's position (we do not have to store both sides because we can use one side to deduce the other so long as we know the total number of passengers in the problem). The operator between states will be the transition of the shuttle and its passenger choice. Figure 1 illustrates the semantic network created by abstracting the problem.  
+It is possible to represent the Star Wars problem as a semantic net. Each node of the net represents a state in the problem space. For the Star Wars problem, each node, at a minimum, should provide a way to store who is planet-side and where the ship's position (we do not have to store both sides because we can use one side to deduce the other so long as we know the total number of passengers in the problem). The operator between states will be the transition of the shuttle and its passenger choice. \textbf{\textit{Figure 1}} illustrates the semantic network created by abstracting the problem. 
 
-With the blueprint of the node, we can use it to design a generate and test method. The generator should use the operator (move 1 or 0 passengers) to generate each possible state. Hence, the generator will generate $j + 1$ cases, where $j$ is the number of people on the same side as the ship. The extra value in possibilities accommodates the case that no passenger is moved.  
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=11cm]{Figures/HW1 diagram - Page 2 (4).png}
+	\caption{An example of a representation of the problem using a semantic net. Source: Star Wars used with Fair-Use, non-commercial  license (\cite{pngegg_contributor_star_nodate}et. all). Diagram by author.}
+	\label{fig1:net}
+\end{figure}
 
-In turn, the tester should check each generated state for validity using the conditions listed. A failure in any condition pruning any invalid state: 
+The generator should use the operator (move 1 or 0 passengers) to generate each possible state. The generator can generate $\textit{j} + 1$ cases, where $\textit{j}$ is the number of people on the same side as the ship. In turn, the tester should check each generated state for validity using the conditions listed.
 
 \begin{itemize}
-	\item Checking against the rules of the problem (i.e., Is Rey and Kylo alone without the ship? Is Rey and Snoke together without the ship?) 
-	\item Checking if the state is a solution by comparing against the goal state (i.e., Is everyone is space side?) 
-	\item Checking to see if the state has been generated before along the path (i.e., Does the state have a connection to an identical state?) 
-	\item Merging any identical states on the same level to reduce branching (i.e., Is there another state at this branch level that is identical?) 
-	\item The tester should navigate these states in a breadth first search (BFS) to identify the optimal path to the solution state. Worst case time and space efficiency of $O(b^d)$, where $b$ is the branching factor and $d$ is the depth (\cite{korf_artificial_1999})
+	\item State adheres to rules of the problem
+	\item Checking if the state is a solution
+	\item Checking to see if the state has been generated before along the path
+	\item Merging any identical states on the same level to reduce branching
+	\item Using breadth first search to navigate the net. Worst case time and space efficiency of $O(\textit{b}^d)$, where $\textit{b}$ is the branching factor and $\textit{d}$ is the depth (\cite{korf_artificial_1999})
 \end{itemize}
-The full semantic network to this problem is illustrated in Figure 2.
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=\paperwidth,height=0.80\paperheight]{Figures/HW1 diagram - Page 1.png}
+	\label{fig2:net}
+	\caption{}
+\end{figure}
 
 \section{Question 2}
 The General Data Protection Regulation (GDPR) outlines the principles by which companies must treat personal data. The regulation says that personally identifiable data must be consented for, processed fairly and transparently, collected with explicit consent, adequately (i.e., no blanket data-collection), accurately and limited to what is necessary (i.e., data minimization), handled, and stored to meet expectations outlined by the policy (\cite{european_parliament_general_2016})(\cite{davies_personalization_2018}). 
