@@ -269,6 +269,7 @@
 % Inline citations
 \renewcommand{\cite}[1]{\citeauthor{#1}, \citeyear{#1}}
 \renewcommand{\citep}[1]{(\citeauthor{#1}, \citeyear{#1})}
+\newcommand{\citeinl}[1]{\citeauthor{#1} (\citeyear{#1})}
 
 
 %%
