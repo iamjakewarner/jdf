@@ -12,7 +12,7 @@ with the following commands:
     pdflatex jdf-starter
 
 The result should look like `jdf-starter.pdf`.
-* `biber` command generates used referenes from `references.bib` 
+* `biber` command generates used references from `references.bib` 
 * `pdflatex` command generates the final pdf 
 
 ## License
