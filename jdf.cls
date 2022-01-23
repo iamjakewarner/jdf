@@ -266,6 +266,19 @@
 
 \DeclareNameAlias{sortname}{family-given}
 
+% editing answer by moewe to get multiyear things going (2021a, 2021b)
+\DeclareCiteCommand{\citeyear}
+    {\usebibmacro{prenote}}
+    {\printfield{year}\printfield{extrayear}}
+    {\multicitedelim}
+    {\usebibmacro{postnote}}
+
+\DeclareCiteCommand{\citeyearpar}[\mkbibparens]
+    {\usebibmacro{prenote}}
+    {\printfield{year}\printfield{extrayear}}
+    {\multicitedelim}
+    {\usebibmacro{postnote}}
+
 % Inline citations
 \renewcommand{\cite}[1]{\citeauthor{#1}, \citeyear{#1}}
 \renewcommand{\citep}[1]{(\citeauthor{#1}, \citeyear{#1})}
