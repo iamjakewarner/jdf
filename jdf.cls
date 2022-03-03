@@ -284,6 +284,15 @@
 \renewcommand{\cite}[1]{\citeauthor{#1}, \citeyear{#1}}
 \renewcommand{\citep}[1]{(\citeauthor{#1}, \citeyear{#1})}
 
+\newcommand{\citenoauth}[1]{\citetitle{#1}, \citeyear{#1}}
+\newcommand{\citenoauthp}[1]{(\citetitle{#1}, \citeyear{#1})}
+
+\newcommand{\citenoauthdate}[1]{\citetitle{#1}, n.d.}
+\newcommand{\citenoauthdatep}[1]{(\citetitle{#1}, n.d.)}
+
+
+\newcommand{\citeauthnodate}[1]{\citeauthor{#1}, n.d.}
+\newcommand{\citeauthnodatep}[1]{(\citeauthor{#1}, n.d.)}
 
 %%
 % Metadata
