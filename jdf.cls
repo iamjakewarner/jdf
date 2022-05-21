@@ -19,8 +19,8 @@
 	\RequirePackage[
 		a4paper,
 		top=26.25mm,
-		bottom=42.472mm, 
-		left=34.361mm, 
+		bottom=42.472mm,
+		left=34.361mm,
 		right=34.361mm,
 		footskip=16.222mm, % Space from the bottom margin to the baseline of the footer
 		%showframe, % Uncomment to show how the type block is set on the page
@@ -30,8 +30,8 @@
 	\RequirePackage[
 		\papersize,
 		top=1in,
-		bottom=1.5in, 
-		left=1.5in, 
+		bottom=1.5in,
+		left=1.5in,
 		right=1.5in,
 		footskip=0.5in, % Space from the bottom margin to the baseline of the footer
 		%showframe, % Uncomment to show how the type block is set on the page
@@ -112,7 +112,7 @@
 		{\normalfont \@email}
 		\vspace{-11pt}
 	\end{center}
-	
+
 	\hypersetup{
 		pdftitle=\@title,
 		pdfauthor=\@author
