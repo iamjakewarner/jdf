@@ -302,11 +302,34 @@
 
 \DeclareNameAlias{sortname}{family-given}
 
+% editing answer by moewe to get multiyear things going (2021a, 2021b)
+% https://tex.stackexchange.com/questions/312539/unwanted-comma-between-author-and-year-using-citet-command
+\DeclareCiteCommand{\citeyear}
+    {\usebibmacro{prenote}}
+    {\printfield{year}\printfield{extrayear}}
+    {\multicitedelim}
+    {\usebibmacro{postnote}}
+
+\DeclareCiteCommand{\citeyearpar}[\mkbibparens]
+    {\usebibmacro{prenote}}
+    {\printfield{year}\printfield{extrayear}}
+    {\multicitedelim}
+    {\usebibmacro{postnote}}
+
 % Inline citations
 \renewcommand{\cite}[1]{\citeauthor{#1}, \citeyear{#1}}
 \renewcommand{\citep}[1]{(\citeauthor{#1}, \citeyear{#1})}
 \newcommand{\citeinl}[1]{\citeauthor{#1} (\citeyear{#1})}
 
+\newcommand{\citenoauth}[1]{\citetitle{#1}, \citeyear{#1}}
+\newcommand{\citenoauthp}[1]{(\citetitle{#1}, \citeyear{#1})}
+
+\newcommand{\citenoauthdate}[1]{\citetitle{#1}, n.d.}
+\newcommand{\citenoauthdatep}[1]{(\citetitle{#1}, n.d.)}
+
+
+\newcommand{\citeauthnodate}[1]{\citeauthor{#1}, n.d.}
+\newcommand{\citeauthnodatep}[1]{(\citeauthor{#1}, n.d.)}
 
 %%
 % Metadata
