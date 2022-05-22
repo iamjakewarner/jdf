@@ -39,6 +39,14 @@ The result should look like `jdf-starter.pdf`.
 * `biber` command generates used references from `references.bib` 
 * `pdflatex` command generates the final pdf 
 
+## Adding jdf.cls to Global TeX
+
+The `jdf.cls` file can be referenced by updating the `TEXINPUTS` with the path to the git checkout
+
+```sh
+export TEXINPUTS=/path/to/the/checkout/jdf/
+```
+
 ## VSCode Quick Start
 
 1. Add the [Latex Workshop](https://github.com/James-Yu/LaTeX-Workshop) Extension
