@@ -58,13 +58,11 @@
 \RequirePackage{eulervm}
 \RequirePackage[scaled=.8819]{sourcecodepro} % Source Code Pro typeface for monospace
 \RequirePackage{csquotes}
-%\defaultfontfeatures{Ligatures=TeX} % To support LaTeX ligatures (`` and --)
 
 % Letterspacing
 \RequirePackage[
 	activate={true,nocompatibility},
 	final,
-	tracking=true,
 	kerning=true,
 	spacing=true,
 	factor=1260,
@@ -73,7 +71,6 @@
 ]{microtype}
 \frenchspacing  % Prevent double whitespaces between sentences
 
-\SetTracking{encoding=*}{10}
 \lsstyle
 
 \newcommand\lsstylehelp[1]{\edef\MT@letterspace@{#1}\lsstyle} % Enable change to letterspacing
@@ -100,7 +97,6 @@
 % Paragraph indentation
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{8.5pt}
-\setlength{\textfloatsep}{0pt}
 
 
 %%
@@ -187,13 +183,13 @@
 % Captions
 % Note: don't use "figures" when floating is not desired. See:
 % 	https://texblog.net/latex-archive/uncategorized/prevent-floating-image-figure-table/
-\RequirePackage[hypcap=false]{caption} % Required for customising captions
+\RequirePackage{caption} % Required for customising captions
 \DeclareCaptionFormat{letterspaced}{%
 	\lsstylehelp{20}{%
 			#1#2#3\par%
 	}{}%
 }
-\captionsetup{belowskip=0pt} % Attempt to match the spacing after a Figure
+\captionsetup{hypcap=false} % Resolves warning
 \captionsetup{format=letterspaced} % Use the letter spaced caption style by default
 \captionsetup{margin=1in} % Margin on the left and right sides of captions
 \captionsetup{justification=justified, singlelinecheck=false} % Left-align and justify captions
@@ -201,8 +197,10 @@
 \captionsetup{labelfont={bf,it}} % BoldItalic label and number
 \DeclareCaptionLabelSeparator{emdash}{\hairsp—\hairsp} % Custom caption label separator
 \captionsetup{labelsep=emdash} % Change the default colon between number and label to use the custom separator
+
 \RequirePackage{mdframed}
 \mdfdefinestyle{nonbreakingframe}{nobreak,linecolor=white,leftmargin=0,rightmargin=0,innerleftmargin=0,innerrightmargin=0,innertopmargin=0,innerbottommargin=0,skipabove=8.5pt,skipbelow=0}
+
 \newenvironment{jdffigure}{%
 	\begin{mdframed}[style=nonbreakingframe]
 	\begin{center}
@@ -289,7 +287,7 @@
 \defbibenvironment{bibliography}
 	{\list
 		{\printtext[labelnumberwidth]{%
-			\printfield{prefixnumber}%
+			\printfield{labelprefix}%
 			\printfield{labelnumber}}
 		}%
 		{\setlength{\labelwidth}{\labelnumberwidth}%
