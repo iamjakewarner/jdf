@@ -12,7 +12,7 @@ If you already have Tex installed and configured for your OS than you can likely
 ```sh
 brew install text-live-utility
 # Ensure required packages are installed
-sudo tlmgr install collection-latexrecommended collection-latexextra collection-fontsrecommended collection-fontsextra
+sudo tlmgr install collection-latexrecommended collection-latexextra collection-fontsrecommended collection-fontsextra collection-mathscience
 ```
 
 ### Linux

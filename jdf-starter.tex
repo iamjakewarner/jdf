@@ -14,7 +14,6 @@
 
 \maketitle
 
-% FIXME: Make links a lighter blue color
 \begin{abstract}
 	Welcome to Joyner Document Format (JDF) v2.2! JDF is primarily intended to standardize page lengths while ensuring readability. Note that you are required to use JDF for all written assignments, but we will not perform explicit formatting checks. So, while improper formatting may be subject to penalties, you should not worry too much about whether your submission conforms to every minute detail; the most important elements are margins, font, font sizes, and line spacing. Just make a copy of one of the provided templates and replace its contents with your own, using the built-in paragraph styles.\footnote{Here are instructions for \href{https://support.office.com/en-us/article/Video-Using-Styles-in-Word-9db4c0f4-2754-4294-9758-c14a0abd8cfa}{Microsoft Word}, \href{https://support.apple.com/guide/pages/intro-to-paragraph-styles-tanaa39b0aa3/mac}{Apple Pages}, and \href{https://www.bazroberts.com/2016/04/19/google-docs-paragraph-styles-headings/}{Google Docs}.} If you do so, you do not need to verify that the style was followed.
 \end{abstract}
@@ -22,14 +21,11 @@
 \section{Typography}
 All text in JDF should be set in the Palatino typeface. It is available practically everywhere as a system font: Google Docs offers a version called \emph{Palatino Linotype}. It comes in regular and bold weights with matching italics.
 
-\begin{figure} % [H]
-	\centering
-	\includegraphics[height=0.8cm]{Figures/Handgloves.png} \\
-	\vspace{5pt}
-	{\huge Handgloves}
-	\caption{Make sure the live text (bottom) uses the same font as the image (top).}
-	\label{fig:Palatino}
-\end{figure}
+\begin{center}
+\includegraphics[height=0.8cm]{Figures/Handgloves.png} \\
+{\huge Handgloves}%
+\captionof{figure}{Palatino. Make sure the live text (bottom) uses the same font as the image (top).}\label{fig:Palatino}%
+\end{center}
 
 \subsection{Body text}
 Body text is set in the regular weight at 11 points with custom line spacing of 1.26, and 8.5 points of spacing added after each paragraph. It should be justified and paragraphs should not be indented. These styles can be automatically applied using the \emph{Normal} paragraph style.
@@ -68,12 +64,10 @@ Figures should always be centered on the page, although they may also take up th
 
 If your figure includes a white background (e.g. an interface design or graph), it may aid legibility to add a \(\frac{1}{4}\)-point black border.
 
-\begin{figure} % [H] % prevents floating
-	\centering
-	\includegraphics[height=6cm]{Figures/flowchart.png}
-	\caption{Make sure your flowcharts are more useful than this one. Source: \href{https://xkcd.com/1195/}{XKCD}.}
-	\label{fig:flowchart}
-\end{figure}
+\begin{center}
+\includegraphics[height=6cm]{Figures/flowchart.png}%
+\captionof{figure}{Make sure your flowcharts are more useful than this one. Source: \href{https://xkcd.com/1195/}{XKCD}.}\label{fig:flowchart}%
+\end{center}
 
 Figure captions should be centered beneath the corresponding figure. The label (e.g. “Figure 1”) should be set in bold italics followed by an em dash, and the entire caption should be 8.5 pt with 14 pt of line spacing. The \emph{Figure Caption} style in Word will number your figures automatically. If need be, you may have one figure caption corresponding to consecutive figures and use either locational descriptors (e.g. “top left,” “middle”) or labels (e.g. “A”, “B”) to map parts of the caption to parts of the figure. Make sure captions fall on the same page as the corresponding figure or table; you may rearrange text to make this work.
 
@@ -84,22 +78,21 @@ You have freedom to format tables in the way that works best for your data. Gene
 
 Table captions should be formatted the same way as figure captions, but they should be placed above the table. The popular mnemonic for this is: figures at the foot, tables at the top. Like figures, tables should not exceed the margins and should be centered on the page.
 
-\begin{table} % [H]
-	\caption{Mathematical constants. Notice how the approximations align at the decimal.}
-	\small % Reduce font size
-	\centering % Centre the table
-	\begin{tabular}{L{0.17\linewidth} C{0.12\linewidth} L{0.17\linewidth} L{0.4\linewidth}}
-		\textbf{Name} & \textbf{Symbol} & \textbf{Approximation} & \textbf{Description} \\
-		\toprule[0.5pt]
-		Golden ratio & $\phi$ & 1.618 & Number such that the ratio of " to the number is equal to the ratio of its reciprocal to 1\\
-		\midrule
-		Euler's number & $e$ & 2.71828 & Exponential growth constant\\
-		\midrule
-		Archimedes' constant & $\pi$ & 3.14 & The ratio between circumference and diameter of a circle\\
-		\midrule
-		One hundred & A+ & 100.00 & The grade we hope you’ll all earn in this class\\
-	\end{tabular}
-\end{table}
+\begin{center}
+\captionof{table}{Mathematical constants. Notice how the approximations align at the decimal.}\label{table:Example}
+\small % Reduce font size
+\begin{tabular}{p{0.15\linewidth} c S p{0.5\linewidth}}
+	\textbf{Name} & \textbf{Symbol} & \textbf{Approximation} & \textbf{Description} \\
+	\toprule[0.5pt]
+	Golden ratio & $\phi$ & 1.618 & Number such that the ratio of " to the number is equal to the ratio of its reciprocal to 1\\
+	\midrule
+	Euler's number & $e$ & 2.71828 & Exponential growth constant\\
+	\midrule
+	Archimedes' constant & $\pi$ & 3.14 & The ratio between circumference and diameter of a circle\\
+	\midrule
+	One hundred & A+ & 100.00 & The grade we hope you’ll all earn in this class\\
+\end{tabular}
+\end{center}
 
 \subsection{Additional elements}
 There are additional elements you may want to include in your paper, such as in-line or block quotes, lists, and more. For other content types not covered here, you have flexibility in determining how it should be used in this format.

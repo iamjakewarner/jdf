@@ -71,7 +71,7 @@
 	stretch=10,
 	shrink=10
 ]{microtype}
-\microtypecontext{spacing=nonfrench}
+\frenchspacing  % Prevent double whitespaces between sentences
 
 \SetTracking{encoding=*}{10}
 \lsstyle
@@ -172,16 +172,16 @@
 
 
 % FIXME: Finish syncing text from Google Doc. Learn Keyboard shortcuts
+% TODO: Remove excess whitespace skip after table
 
 %%
 % Captions
-\RequirePackage{caption} % Required for customising captions
-% FIXME" Remove figures and just use caption (so that they don't float)
-% \RequirePackage{float} % Prevent floating with "\begin{figure}[H]" or "\begin{table}[H]"
-% ^ From: https://texblog.net/latex-archive/uncategorized/prevent-floating-image-figure-table/
+% Note: don't use "figures" when floating is not desired. See:
+% 	https://texblog.net/latex-archive/uncategorized/prevent-floating-image-figure-table/
+\RequirePackage[hypcap=false]{caption} % Required for customising captions
 \DeclareCaptionFormat{letterspaced}{%
 	\lsstylehelp{20}{%
-			#1#2#3%
+		#1#2#3\par%
 	}{}%
 }
 % FIXME: Set to 0 and fix the ~10pt added from somewhere?
@@ -220,6 +220,7 @@
 
 %%
 % Tables
+\RequirePackage{siunitx}  % Required for "S" to align by decimal
 
 % Set default table placement to htbp
 \def\fps@table{htbp}
