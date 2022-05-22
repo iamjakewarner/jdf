@@ -41,7 +41,7 @@
 \RequirePackage{hyperref} % Required for including links
 \RequirePackage{changepage}
 
-\RequirePackage[defaultlines=3,all]{nowidow}  % Prevent line breaks in short paragraphs
+\RequirePackage[defaultlines=2,all]{nowidow}  % Prevent line breaks in short paragraphs
 
 %%
 % Font stuff
@@ -139,6 +139,18 @@
 }
 
 
+%%
+% Quotation
+\renewenvironment{quotation}{%
+	\begin{center}
+		\vspace{-8.5pt}
+		\begin{adjustwidth}{0.5in}{0.5in}
+			\noindent }{%
+		\end{adjustwidth}
+		\vspace{-8.5pt}
+	\end{center}
+}
+
 
 %%
 % Headings
@@ -171,8 +183,6 @@
 }
 
 
-% FIXME: Finish syncing text from Google Doc. Learn Keyboard shortcuts
-
 %%
 % Captions
 % Note: don't use "figures" when floating is not desired. See:
@@ -180,7 +190,7 @@
 \RequirePackage[hypcap=false]{caption} % Required for customising captions
 \DeclareCaptionFormat{letterspaced}{%
 	\lsstylehelp{20}{%
-		#1#2#3\par%
+			#1#2#3\par%
 	}{}%
 }
 \captionsetup{belowskip=0pt} % Attempt to match the spacing after a Figure
@@ -268,13 +278,13 @@
 \RequirePackage[
 	bibstyle=authoryear,
 	dashed=false,
-	sorting=nyt,
+	sorting=ynt,
 	natbib=true,
 	maxbibnames=99
 ]{biblatex}
 
 \DeclareFieldFormat{bibentrysetcount}{\mkbibparens{\mknumalph{#1}}}
-\DeclareFieldFormat{labelnumberwidth}{\mkbibbrackets{#1}}
+\DeclareFieldFormat{labelnumberwidth}{#1.}
 
 \defbibenvironment{bibliography}
 	{\list
