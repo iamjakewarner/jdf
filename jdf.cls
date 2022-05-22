@@ -41,6 +41,7 @@
 \RequirePackage{hyperref} % Required for including links
 \RequirePackage{changepage}
 
+\RequirePackage[defaultlines=3,all]{nowidow}  % Prevent line breaks in short paragraphs
 
 %%
 % Font stuff
@@ -70,6 +71,7 @@
 	stretch=10,
 	shrink=10
 ]{microtype}
+\microtypecontext{spacing=nonfrench}
 
 \SetTracking{encoding=*}{10}
 \lsstyle
@@ -79,6 +81,9 @@
 \renewcommand{\,}{\ifmmode\mskip1mu\else\kern0.167em\fi}
 
 % Font sizes
+\renewcommand\huge{%
+	\@setfontsize\huge{22}{36}%
+}
 \renewcommand\normalsize{%
 	\@setfontsize\normalsize{11}{17}%
 }
@@ -166,14 +171,21 @@
 }
 
 
+% FIXME: Finish syncing text from Google Doc. Learn Keyboard shortcuts
+
 %%
 % Captions
 \RequirePackage{caption} % Required for customising captions
+% FIXME" Remove figures and just use caption (so that they don't float)
+% \RequirePackage{float} % Prevent floating with "\begin{figure}[H]" or "\begin{table}[H]"
+% ^ From: https://texblog.net/latex-archive/uncategorized/prevent-floating-image-figure-table/
 \DeclareCaptionFormat{letterspaced}{%
 	\lsstylehelp{20}{%
-			#1#2#3\par%
+			#1#2#3%
 	}{}%
 }
+% FIXME: Set to 0 and fix the ~10pt added from somewhere?
+\captionsetup{belowskip=-1.5pt} % Attempt to match the spacing after a Figure
 \captionsetup{format=letterspaced} % Use the letter spaced caption style by default
 \captionsetup{margin=1in} % Margin on the left and right sides of captions
 \captionsetup{justification=justified, singlelinecheck=false} % Left-align and justify captions
@@ -275,13 +287,12 @@
 %%
 % Metadata
 \RequirePackage{xcolor} % Required for defining custom colours
-\definecolor{linkBlue}{cmyk}{100,50,0,0}
 \hypersetup{
 	% bookmarks=true,
 	% bookmarksopen=true,
 	pdfpagemode=UseOutlines,
-	colorlinks,
-	citecolor=linkBlue,
-	urlcolor=linkBlue,
-	linkcolor=linkBlue
+	colorlinks=true,
+	citecolor=blue,
+	urlcolor=blue,
+	linkcolor=blue
 }
