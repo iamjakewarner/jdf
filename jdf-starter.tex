@@ -21,11 +21,11 @@
 \section{Typography}
 All text in JDF should be set in the Palatino typeface. It is available practically everywhere as a system font: Google Docs offers a version called \emph{Palatino Linotype}. It comes in regular and bold weights with matching italics.
 
-\begin{center}
+\begin{jdffigure}
 \includegraphics[height=0.8cm]{Figures/Handgloves.png} \\
 {\huge Handgloves}%
 \captionof{figure}{Palatino. Make sure the live text (bottom) uses the same font as the image (top).}\label{fig:Palatino}%
-\end{center}
+\end{jdffigure}
 
 \subsection{Body text}
 Body text is set in the regular weight at 11 points with custom line spacing of 1.26, and 8.5 points of spacing added after each paragraph. It should be justified and paragraphs should not be indented. These styles can be automatically applied using the \emph{Normal} paragraph style.
@@ -64,10 +64,10 @@ Figures should always be centered on the page, although they may also take up th
 
 If your figure includes a white background (e.g. an interface design or graph), it may aid legibility to add a \(\frac{1}{4}\)-point black border.
 
-\begin{center}
+\begin{jdffigure}
 \includegraphics[height=6cm]{Figures/flowchart.png}%
 \captionof{figure}{Make sure your flowcharts are more useful than this one. Source: \href{https://xkcd.com/1195/}{XKCD}.}\label{fig:flowchart}%
-\end{center}
+\end{jdffigure}
 
 Figure captions should be centered beneath the corresponding figure. The label (e.g. “Figure 1”) should be set in bold italics followed by an em dash, and the entire caption should be 8.5 pt with 14 pt of line spacing. The \emph{Figure Caption} style in Word will number your figures automatically. If need be, you may have one figure caption corresponding to consecutive figures and use either locational descriptors (e.g. “top left,” “middle”) or labels (e.g. “A”, “B”) to map parts of the caption to parts of the figure. Make sure captions fall on the same page as the corresponding figure or table; you may rearrange text to make this work.
 
@@ -78,10 +78,10 @@ You have freedom to format tables in the way that works best for your data. Gene
 
 Table captions should be formatted the same way as figure captions, but they should be placed above the table. The popular mnemonic for this is: figures at the foot, tables at the top. Like figures, tables should not exceed the margins and should be centered on the page.
 
-\begin{center}
+\begin{jdftable}
 \captionof{table}{Mathematical constants. Notice how the approximations align at the decimal.}\label{table:Example}
 \small % Reduce font size
-\begin{tabular}{p{0.15\linewidth} c S p{0.5\linewidth}}
+\begin{tabular}{@{} L{0.15\linewidth} c S L{0.52\linewidth}}
 	\textbf{Name} & \textbf{Symbol} & \textbf{Approximation} & \textbf{Description} \\
 	\toprule[0.5pt]
 	Golden ratio & $\phi$ & 1.618 & Number such that the ratio of " to the number is equal to the ratio of its reciprocal to 1\\
@@ -92,7 +92,7 @@ Table captions should be formatted the same way as figure captions, but they sho
 	\midrule
 	One hundred & A+ & 100.00 & The grade we hope you’ll all earn in this class\\
 \end{tabular}
-\end{center}
+\end{jdftable}
 
 \subsection{Additional elements}
 There are additional elements you may want to include in your paper, such as in-line or block quotes, lists, and more. For other content types not covered here, you have flexibility in determining how it should be used in this format.

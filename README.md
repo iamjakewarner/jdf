@@ -1,9 +1,8 @@
-Welcome to the Joyner Document Format official LaTeX class.
-This class was written and tested using a default MacTeX installation,
-so it should work out of the box
-as long as you’re running an up-to-date LaTeX distribution.
+# Joyner Document Format
 
-## Installation
+Welcome to the **2022 fork** of the Joyner Document Format official LaTeX class.
+
+## TeX Installation
 
 If you already have Tex installed and configured for your OS than you can likely skip to Quick Start section
 

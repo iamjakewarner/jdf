@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{jdf}[2020/02/05 v2.2.0 Joyner Document Format]
+\ProvidesClass{jdf}[2022/05/22 v2.2.0 Joyner Document Format]
 
 \newcommand{\papersize}{letterpaper} % Default value
 \DeclareOption{a4paper}{\renewcommand{\papersize}{a4paper}}
@@ -67,7 +67,7 @@
 	tracking=true,
 	kerning=true,
 	spacing=true,
-	factor=1100,
+	factor=1260,
 	stretch=10,
 	shrink=10
 ]{microtype}
@@ -100,6 +100,7 @@
 % Paragraph indentation
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{8.5pt}
+\setlength{\textfloatsep}{0pt}
 
 
 %%
@@ -112,10 +113,9 @@
 
 \renewcommand{\maketitle}{\bgroup
 	\begin{center}
-		{\large\selectfont\liningnums\lsstylehelp{0} \@title\par}
-		{\normalfont \@author}\\
-		{\normalfont \@email}
-		\vspace{-11pt}
+		{\large\selectfont\liningnums\lsstylehelp{0} \par\@title\par}
+		{\normalfont \@author\\\@email}%
+		\vspace{-8.5pt}
 	\end{center}
 
 	\hypersetup{
@@ -132,12 +132,12 @@
 		\begin{adjustwidth}{0.5in}{0.5in}
 			\normalfont%
 			\textbf{\textit{Abstract\hairsp—\hairsp}}\ignorespaces
-			}
-			{%
+			}{%
 		\end{adjustwidth}
-		\vspace{-11pt}
+		\vspace{-8.5pt}
 	\end{center}
 }
+
 
 
 %%
@@ -148,7 +148,7 @@
 	{\normalfont\liningnums\lsstylehelp{60}\bfseries}
 	{\thesection}{0.333em} % Space between the title and label
 	{\MakeUppercase}
-\titlespacing*{\section}{0pt}{2.5pt}{0pt}
+\titlespacing*{\section}{0pt}{0pt}{0pt}
 
 % Heading 2
 \titleformat{\subsection}
@@ -172,7 +172,6 @@
 
 
 % FIXME: Finish syncing text from Google Doc. Learn Keyboard shortcuts
-% TODO: Remove excess whitespace skip after table
 
 %%
 % Captions
@@ -184,8 +183,7 @@
 		#1#2#3\par%
 	}{}%
 }
-% FIXME: Set to 0 and fix the ~10pt added from somewhere?
-\captionsetup{belowskip=-1.5pt} % Attempt to match the spacing after a Figure
+\captionsetup{belowskip=0pt} % Attempt to match the spacing after a Figure
 \captionsetup{format=letterspaced} % Use the letter spaced caption style by default
 \captionsetup{margin=1in} % Margin on the left and right sides of captions
 \captionsetup{justification=justified, singlelinecheck=false} % Left-align and justify captions
@@ -193,7 +191,16 @@
 \captionsetup{labelfont={bf,it}} % BoldItalic label and number
 \DeclareCaptionLabelSeparator{emdash}{\hairsp—\hairsp} % Custom caption label separator
 \captionsetup{labelsep=emdash} % Change the default colon between number and label to use the custom separator
-
+\RequirePackage{mdframed}
+\mdfdefinestyle{nonbreakingframe}{nobreak,linecolor=white,leftmargin=0,rightmargin=0,innerleftmargin=0,innerrightmargin=0,innertopmargin=0,innerbottommargin=0,skipabove=8.5pt,skipbelow=0}
+\newenvironment{jdffigure}{%
+	\begin{mdframed}[style=nonbreakingframe]
+	\begin{center}
+	}{%
+	\vspace{-8.5pt}
+	\end{center}
+	\end{mdframed}
+}
 
 %%
 % Lists
@@ -228,11 +235,19 @@
 
 \RequirePackage{booktabs} % Required for better horizontal rules in tables
 \RequirePackage{array} % Required for manipulating table columns
-\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}} % Define a new right-aligned column type
-\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}} % Define a new left-aligned (no justification) column type
-\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}} % Define a new centred column type
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}} % Define a new right-aligned paragraph column type
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}} % Define a new left-aligned (no justification) paragraph column type
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}} % Define a new centered paragraph column type
 \setlength\lightrulewidth{0.03em}
 
+\newenvironment{jdftable}{%
+	\begin{mdframed}[style=nonbreakingframe]
+	\begin{center}
+	}{%
+	\vspace{-8.5pt}
+	\end{center}
+	\end{mdframed}
+}
 
 %%
 % Footnotes
@@ -297,3 +312,9 @@
 	urlcolor=blue,
 	linkcolor=blue
 }
+
+
+%% General Tex Notes
+% Remove leading space on tables with "${}": https://stackoverflow.com/a/3155768/3219667
+% Why \arraybackslash: https://tex.stackexchange.com/a/387741/224014
+% Trailing comment swallows the end-of-line character: https://tex.stackexchange.com/a/7459/224014
