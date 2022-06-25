@@ -11,7 +11,6 @@
 
 \RequirePackage{etoolbox} % Required for conditional logic
 
-
 %%
 % Page layout
 \ifstrequal{\papersize}{a4paper}{ % A4 paper page geometry settings
@@ -348,3 +347,7 @@
 % Remove leading space on tables with "${}": https://stackoverflow.com/a/3155768/3219667
 % Why \arraybackslash: https://tex.stackexchange.com/a/387741/224014
 % Trailing comment swallows the end-of-line character: https://tex.stackexchange.com/a/7459/224014
+
+%% Utilities
+% Source: https://tex.stackexchange.com/a/484219/224014
+\newcommand{\comment}[1]{}
