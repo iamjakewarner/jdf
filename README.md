@@ -1,6 +1,6 @@
 # Joyner Document Format
 
-Welcome to the **2022 fork** of the Joyner Document Format official LaTeX class.
+Welcome to the **2022 update** of the Joyner Document Format official LaTeX class.
 
 ## TeX Installation
 
