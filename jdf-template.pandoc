@@ -2,6 +2,10 @@
 
 \usepackage{longtable}
 
+\newenvironment{CSLReferences}%
+  {}%
+  {\par}
+
 $if(highlighting-macros)$
 $highlighting-macros$
 $endif$
