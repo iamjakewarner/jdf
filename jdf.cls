@@ -275,7 +275,7 @@
 \RequirePackage[
 	bibstyle=authoryear,
 	dashed=false,
-	sorting=ynt,
+	sorting=nyt,
 	natbib=true,
 	maxbibnames=99
 ]{biblatex}
