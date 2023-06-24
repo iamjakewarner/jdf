@@ -273,7 +273,7 @@
 %%
 % References
 \RequirePackage[
-	bibstyle=authoryear,
+	style=authoryear,
 	dashed=false,
 	sorting=ynt,
 	natbib=true,
